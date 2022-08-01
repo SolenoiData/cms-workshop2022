@@ -137,5 +137,5 @@ data['wjets']['nominal']['file'].append({
 })
 data['wjets']['nominal']['nevents_total']=findRecid("20548")[1]
 
-with open('data.json', 'w') as file:
+with open('ntuples.json', 'w') as file:
     json.dump(data, file)
