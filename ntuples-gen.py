@@ -26,22 +26,19 @@ data['single_top_tW'] = {}
 data['wjets'] =  {}
 
 #24119
-data['data']['single muon'] = {}
-data['data']['single muon']['files']=[]
-data['data']['single muon']['files'].append({
+data['data']['nominal'] = {}
+data['data']['nominal']['files']=[]
+data['data']['nominal']['files'].append({
     'path': findRecid("24119")[2],
     'nevts': findRecid("24119")[1]
 })
-data['data']['single muon']['nevts_total']=findRecid("24119")[1]
 
 #24120
-data['data']['single electron'] = {}
-data['data']['single electron']['files']=[]
-data['data']['single electron']['files'].append({
+data['data']['nominal']['files'].append({
     'path': findRecid("24120")[2],
     'nevts': findRecid("24120")[1]
 })
-data['data']['single electron']['nevts_total']=findRecid("24120")[1]
+data['data']['nominal']['nevts_total']= findRecid("24119")[1]+findRecid("24120")[1]
 
 #19980
 data['ttbar']['nominal']={}
